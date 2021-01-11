@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Click v2</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body
+    style="background-color:#e2e2e2; font-family: Arial, Helvetica, sans-serif"
+  >
+  <div class="config__wrapper" id="Konfigurator">
+    <section class="configurator__info">
+        <h3>Ihr 3 Schritte-Kurskonfigurator </h3>
+        <div class="configurator__info--box first">
+            <h4>Beantworten Sie einfache Fragen und setzen Sie Ihre Prioritäten!</h4>
+            <div class="arrow__orange"></div>
+        </div>
+        <div class="configurator__info--box second">
+            <h4>Was brauchen Sie?<br />Finden Sie es heraus!</h4>
+            <div class="arrow__orange"></div>
+        </div>
+        <div class="configurator__info--box third">
+            <h4>Erhalten Sie Ihr maßgeschneidertes Kursprogramm!</h4>
+        </div>
+        <button class="start__config">Starten</button>
+    </section>
+
+    <section class="configurator__section">
+        <div class="configurator__head">
+            <div class="category__wrapper">
+                  <h4 style="text-align: center;color: white;">Schritt: <span class="category__number">1</span></h4>
+                  <h3 class="category__text">Wohin ich will</h3>
+            </div>
+            <div class="questions__wrapper">
+                <div class="questions__question prevClick" title="vorherige Frage"><span id="questionPrevious" class="previous"></span></div>
+                <div class="questions__question"><span id="questionCurrent" class="current"></span></div>
+                <div class="questions__question"><span id="questionNext" class="next"></span></div>
+            </div>
+            <div class="order__correct" style="display: none;">
+                <button class="statements__reset">Schritt zurücksetzen</button>
+                <div class="order__correct--content">
+                    <h3>Übersicht über ihre Auswahl.</h3>
+                    <h5>Klicken Sie auf <b>WEITER</b>, wenn alles korrekt ist.</h5>
+                </div>
+                <button class="statements__next" style="display:none;">weiter <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32">
+                        <defs>
+                            <style>
+                                .cls-1 {
+                                    fill: none;
+                                }
+                            </style>
+                        </defs>
+                        <title />
+                        <g data-name="Layer 2" id="Layer_2" class="SVGarrow__right">
+                            <path d="M19,26a1,1,0,0,1-.71-.29,1,1,0,0,1,0-1.42L26.59,16l-8.3-8.29a1,1,0,0,1,1.42-1.42l9,9a1,1,0,0,1,0,1.42l-9,9A1,1,0,0,1,19,26Z" />
+                            <path d="M28,17H4a1,1,0,0,1,0-2H28a1,1,0,0,1,0,2Z" />
+                        </g>
+                        <g id="frame">
+                            <rect class="cls-1" height="32" width="32" />
+                        </g>
+                    </svg></button>
+            </div>
+        </div>
+        <div class="statements__outer">
+            <div class="statements__wrapper">
+                <div class="statements__statement">
+                    <span class="statements__choice">
+                    </span>
+                    <span class="statements__statement--content"></span>
+                </div>
+                <div class="statements__statement">
+                    <span class="statements__choice">
+                    </span>
+                    <span class="statements__statement--content">
+                    </span>
+                </div>
+                <div class="statements__statement">
+                    <span class="statements__choice">
+                    </span>
+                    <span class="statements__statement--content">
+                    </span>
+                </div>
+                <div class="statements__statement">
+                    <span class="statements__choice">
+                    </span>
+                    <span class="statements__statement--content">
+                    </span>
+                </div>
+                <div class="statements__statement">
+                    <span class="statements__choice">
+                    </span>
+                    <span class="statements__statement--content">
+                    </span>
+                </div>
+            </div>
+        </div>
+        <div class="config__nav">
+            <button class="config__reset icon-ccw" title="Konfigurator neustarten"></button>
+            <div class="steps__wrapper">
+                <div title="Schritt zurück" class="SVGarrow" id="">
+                    <svg viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg">
+                        <defs>
+                            <style>
+                                .cls-1 {
+                                    fill: none;
+                                }
+                            </style>
+                        </defs>
+                        <title />
+                        <g data-name="Layer 2" id="Layer_2" class="SVGarrow__left">
+                            <path d="M13,26a1,1,0,0,1-.71-.29l-9-9a1,1,0,0,1,0-1.42l9-9a1,1,0,1,1,1.42,1.42L5.41,16l8.3,8.29a1,1,0,0,1,0,1.42A1,1,0,0,1,13,26Z" />
+                            <path d="M28,17H4a1,1,0,0,1,0-2H28a1,1,0,0,1,0,2Z" />
+                        </g>
+                        <g id="frame">
+                            <rect class="cls-1" height="32" width="32" />
+                        </g>
+                    </svg>
+                </div>
+                <div class="steps__step" title="Schritt 1">1</div>
+                <div class="steps__step" title="Schritt 2">2</div>
+                <div class="steps__step" title="Schritt 3">3</div>
+                <div class="steps__step" title="Schritt 4">4</div>
+                <div class="steps__step" title="Schritt 5">5</div>
+            </div>
+            <button class="statements__next" style="display:none;">weiter <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32">
+                    <defs>
+                        <style>
+                            .cls-1 {
+                                fill: none;
+                            }
+                        </style>
+                    </defs>
+                    <title />
+                    <g data-name="Layer 2" id="Layer_2" class="SVGarrow__right">
+                        <path d="M19,26a1,1,0,0,1-.71-.29,1,1,0,0,1,0-1.42L26.59,16l-8.3-8.29a1,1,0,0,1,1.42-1.42l9,9a1,1,0,0,1,0,1.42l-9,9A1,1,0,0,1,19,26Z" />
+                        <path d="M28,17H4a1,1,0,0,1,0-2H28a1,1,0,0,1,0,2Z" />
+                    </g>
+                    <g id="frame">
+                        <rect class="cls-1" height="32" width="32" />
+                    </g>
+                </svg></button>
+        </div>
+    </section>
+    <section class="course__wrapper">
+     <h3 style="color:#fff;">Ihr Ergebnis:</h4>
+<a href="#" target="_blank" style="text-decoration: none;">
+        <div class="course__head">
+            <h2 style="color:#fff; font-weight: 700; font-size: clamp(13pt, 3vw, 27pt); text-transform:uppercase">headline</h2>
+            <h4 style="color:#fff; font-size: clamp(10pt, 2vw, 18pt);">subheadline</h4>
+        </div>
+</a>
+        <div class="course__content">
+        <a href="#" target="_blank"><button class="course__button">zum Kurs</button></a>
+            <div class="course__text"></div>
+            <a href="#" target="_blank"><button class="course__button">zum Kurs</button></a>
+            <button class="config__reset icon-ccw">Konfigurator zurücksetzen</button>
+        </div>
+    </section>
+    <div class="loadScreen" style="display: none">
+        <div class="loader"></div>
+        <h4>Einen Moment, ihre Eingaben werden verarbeitet.</h4>
+    </div>
+</div>
+
+    <script src="//code.jquery.com/jquery-1.12.4.js"></script>
+    <script src="//code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>
